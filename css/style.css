@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(240, 235, 235);
+}
+.gotas{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gota{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(rgba(213, 242, 247, 0.226),rgba(223, 231, 243, 0.096));
+    border-radius: 37% 63% 38% 62% / 49% 59% 41% 51%;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
+                      15px 25px 10px rgba(0,0,0,0.1),
+                      15px 20px 20px rgba(0,0,0,0.5),
+                inset -10px -10px 15px rgba(255,255,255,0.9);
+}
+.gota::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 30px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 65% 35% 74% 26% / 55% 37% 63% 45%;
+}
+.gota::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 22px;
+    left: 105px;
+    width: 10px;
+    height: 10px;
+    border-radius: 35% 65% 54% 46% / 33% 49% 51% 67%;
+}
+.gota:nth-child(2){
+    transform: scale(0.6) translate(-21.68em, 90px);
+    border-radius: 44% 56% 57% 43% / 49% 59% 41% 51% ;
+}
+.gota:nth-child(3){
+    transform: scale(0.5) translate(23.43em, -90px);
+    border-radius: 53% 47% 31% 69% / 49% 59% 41% 51% ;
+}
+.gota:nth-child(4){
+    transform: scale(0.25) translate(45.75em, 280px);
+    border-radius: 35% 65% 54% 46% / 33% 49% 51% 67%;
+}
